@@ -1,0 +1,27 @@
+
+# Exclude core WordPress files
+wp-admin/
+wp-includes/
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/upgrade-log.php
+
+# Exclude development files
+wp-config.php
+wp-config-sample.php
+wp-content/themes/*/node_modules/
+wp-content/plugins/*/node_modules/
+*.log
+*.sql
+*.sqlite
+*.sqlite3
+error_log
+.htaccess
+.DS_Store
+Thumbs.db

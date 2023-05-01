@@ -1,0 +1,4 @@
+name: learn-css
+recipe: wordpress
+config:
+  webroot: .

@@ -1,0 +1,461 @@
+/* Chapter 2 and 3  */
+
+
+.h2-green {
+    color: green;
+    font-family: lato;
+
+    margin: 0;
+    padding: 10px 30px;
+    background-repeat: no-repeat;
+
+}
+
+.container-red {
+
+    margin: 10px 30px;
+    padding: 30px 40px;
+    height: 300px;
+    width: auto;
+    background-color: darkred;
+    border-width: 3px;
+    border-color: darkblue;
+    border-style: ridge;
+    border-radius: 20px;
+}
+
+
+.nav-dark-blue {
+    background-color: darkblue;
+    height: 50px;
+
+}
+
+.nav-dark-blue li {
+    color: #f2f2f2;
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 30px;
+
+}
+
+.nav-dark-blue li:hover {
+    color: #f2f2f2;
+    background-color: red;
+}
+
+.mountain-bg {
+
+    background-image: url('everest.jpg');
+    width: auto;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* Chapter four */
+
+*{
+    margin: 0;padding: 0;
+}
+
+.black-nav li{
+    color: white;
+    padding: 13px;
+    display: inline-block;
+    font-size: 1.5vw;
+    height: 10vh;
+    width: 10vw;
+
+}
+
+.black-nav{
+    background-color:black;
+    height: 79px;
+    position: fixed;
+    width: 100%;
+}
+
+.black-nav li:hover{
+    background-color:blue;
+}
+
+.red-section{
+    display: inline-block;
+    width: 50%;
+    height:500px;
+    background-color: red;
+    font-family: 'Roboto';
+    margin: 0;
+    position:relative;
+    z-index: 2;
+    
+}
+.green-section{
+    display: inline-block;
+    width: 50%;
+    height:500px;
+    background-color: green;
+    margin: 0;
+}
+
+
+/* Chapter six Flex */
+
+.box1{
+    height:400px;
+    width:400px;
+    background-color: red;
+    float:right;
+    border: 3px;
+    
+}
+
+.box2{
+    height:400px;
+    width:400px;
+    background-color: blue;
+    clear:left;
+    float:right;
+    border: 3px;
+    
+}
+
+.flex-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: aqua;
+}
+
+
+.box3{
+    height:300px;
+    /* width:300px; */
+    background-color: green;
+    border: 3px solid black;
+    
+    
+}
+
+.box4{
+    height:300px;
+    /* width:300px; */
+    background-color: yellow;
+    border: 3px solid black;
+    
+}
+
+.flex-container-below{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: orange;
+}
+
+
+
+
+
+.box5{
+    height:300px;
+    width:300px;
+    background-color: green;
+    border: 3px solid black;
+    align-self: flex-start;
+    
+    
+}
+
+.box6{
+    height:300px;
+    width:300px;
+    background-color: yellow;
+    border: 3px solid black;
+    
+}
+
+
+.flex-nav{
+    display: flex;
+    background-color:orange;
+    justify-content: right;
+    align-items: center;
+}
+
+.flex-nav li{
+    padding: 30px;
+    list-style: none;
+    display:inline-block;
+}
+
+
+.flex-nav li:hover{
+    background-color:blue;
+}
+
+
+.flex-nav img{
+    justify-self: flex-start;    
+}
+
+.flex-gallery{
+    display:flex;
+    background-color: aquamarine;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+/* Chapter seven grids */
+
+
+.grid-container{
+    display:grid;
+    background-color: bisque;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto;
+    row-gap: 40px;
+    column-gap: 20px;
+    height: 56vh;
+}
+
+.grid-content{
+    background-color: rebeccapurple;
+    border: 2px solid red;
+}
+
+.grid-content :hover{
+    background-color: brown;
+}
+
+.content-big{
+    background-color: forestgreen;
+    grid-column: 2/5;
+    grid-row: 1 / span 3;
+}
+
+
+
+
+@media screen and (max-width:600px){
+    .grid-container{
+
+        background-color: black;
+    }
+
+}
+
+@media screen and (min-width:600px) and (max-width:1199px){
+    .grid-container{
+
+        background-color: green;
+    }
+}
+
+
+
+
+
+
+.header-grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    background-color: #0202ff;
+    justify-content: center;
+
+}
+.header-image-container{
+    background-color: #0202ff;
+}
+
+
+.empty-grid{
+    grid-column: 2/5;
+    background-color: #0202ff;
+
+}
+
+
+.grid-nav-bar{
+    grid-column: 1/5;
+    background-color: blue;
+    height: 50px;
+}
+
+.grid-nav-bar li{
+    display:inline-block;
+    padding: 20px;
+ 
+    
+    
+}
+
+.grid-nav-bar li:hover{
+    background-color: red;
+    
+}
+
+.grid-gallery{
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    column-gap: 20px;
+}
+
+/* Chapter eight Translate, transform and animations */
+
+
+.h2-translate{
+    color:red;
+    transform: rotate(0.5turn);
+
+}
+
+.transform-box{
+    background-color: green;
+    height: 350px;
+    transform: translate(-30px);
+    transform-origin: 0;
+}
+
+.blue-box{
+    background-color: blue;
+    border: 2px;
+    /* transform: translate(-30px) rotate(45deg); */
+    /* transform-origin: 0; */
+    /* transform: scaleX(2); */
+    /* transform: scaleY(3); */
+    transform: skew(0deg, 10deg);
+
+}
+
+.image-container :hover{
+    transform: scale(2,2) rotate(3deg);
+    
+}
+
+/* Image transition not working */
+
+.image-transition{
+    width:200px;
+    transition: width 0.5s ease-out;
+
+}
+
+.image-transition :hover{
+    width:300px;
+}
+
+/* Transition example */
+
+/* Set initial width and style */
+.my-element {
+    width: 100px;
+    background-color: blue;
+    transition: width 0.5s ease-out;
+  }
+  
+  /* Set hover state and new width */
+  .my-element:hover {
+    width: 200px;
+  }
+  
+
+
+  /* Animation example */
+
+  .animation-box{
+    width: 350px;
+    height: 350px;
+    background-color: aqua;
+    color: red;
+    /* animation-name: widthAnimate;
+    animation-duration: 3s; */
+    animation: widthAnimate 3s ease-in-out 1s 5 alternate;
+  }
+
+  @keyframes widthAnimate{
+    from {
+        width: 350px;
+    }
+    to{
+        width: 500px;
+    }
+
+
+  }
+
+
+  /* Animation progress bar */
+
+  .progress-bar{
+    width: 350px;
+    height: 15px;
+    background-color: green;
+    /* animation-name: widthAnimate;
+    animation-duration: 3s; */
+    animation: progressBar 3s linear 1s 1 alternate;
+  }
+
+  @keyframes progressBar{
+    0% {
+        width: 0vw;
+    }
+    50%{
+        width: 50vw;
+    }
+    100%{
+        Width: 100vw;
+    }
+}
+
+  
+
+
+/* Rotating image using animation */
+
+#rotateImage{
+    animation: rotateAnImage 2s linear 1s 1 alternate;
+
+}
+
+@keyframes rotateAnImage{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(45deg);
+    }
+}
+
+
+.image-slider{
+    width:500px;
+    height: 500px;
+    animation: imageSlider 5s linear 1s 1 alternate;
+}
+
+@keyframes imageSlider{
+    0%{
+        background-image: url('dogfield.jpg');
+        background-size: 500px 500px;
+    }
+    50%{
+        background-image: url('download.jpeg');
+        background-size: 500px 500px;
+    }
+    100%{
+        background-image: url('everest.jpg');
+        background-size: 500px 500px;
+    }
+}

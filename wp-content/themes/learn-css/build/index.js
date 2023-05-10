@@ -1,13 +1,13 @@
-// Get references to the image and button elements
-const myImage = document.getElementById('myImage');
-const myButton = document.getElementById('myButton');
+let marks={
+  harry: 25,
+  basanta:25,
+  badri: 25,
+  basu:22,
+  mausam:20,
+}
 
-// Add a click event listener to the button
-myButton.addEventListener('click', () => {
-  // Change the width and height properties of the image
-  myImage.style.width = '500px';
-  myImage.style.height = '300px';
-});
-
+for(let b in marks){
+  console.log("The marks of"+ b + "is" + marks[b] + "."  );
+}
 
 

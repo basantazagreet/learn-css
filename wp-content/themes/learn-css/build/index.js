@@ -9,5 +9,5 @@ let marks={
 for(let b in marks){
   console.log("The marks of"+ b + "is" + marks[b] + "."  );
 }
-
+//Demo
 
